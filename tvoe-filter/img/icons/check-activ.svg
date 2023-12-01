@@ -1,0 +1,11 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon">
+<rect id="pseudo" width="16" height="16" rx="2" fill="#56AA36"/>
+<g id="pseudo_2">
+<mask id="path-2-inside-1_1_352" fill="white">
+<path d="M2.34009 8.41L9.41116 1.33893L13.6538 5.58158L6.58273 12.6526L2.34009 8.41Z"/>
+</mask>
+<path d="M6.58273 12.6526L5.16852 14.0669L6.58273 15.4811L7.99695 14.0669L6.58273 12.6526ZM12.2396 4.16736L5.16852 11.2384L7.99695 14.0669L15.068 6.99579L12.2396 4.16736ZM7.99695 11.2384L3.7543 6.99579L0.925874 9.82422L5.16852 14.0669L7.99695 11.2384Z" fill="white" mask="url(#path-2-inside-1_1_352)"/>
+</g>
+</g>
+</svg>

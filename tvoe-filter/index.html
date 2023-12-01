@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+	<link rel="stylesheet" href="/tvoe-filter/css/style.css">
+	<title>TВОЄ</title>
+</head>
+<body>
+	<div class="wrapper">
+		<main>
+			<div class="container">
+				<section class="show__sorting sorting">
+					<div class="sorting__title">Сортування:</div>
+						<select class="sorting__filter sorting__filter-active" id="sortingBlock">
+							<option id="sort-rating" class="sort-rating" value="Популярні">популярні</option>
+							<option id="sort-ascending" class="sort-ascending" value="Дешеві">від дешевих до дорогих</option>
+							<option id="sort-descending" class="sort-descending" value="Дорогі">від дорогих до дешевих</option>
+						</select>
+				</section>
+				<div class="catalog">
+					<section class="block__filter filter">
+						<div class="filter__result result">
+							<div class="result__title filter__title">Ви обрали:</div>
+							<div class="result__actively actively">
+								<!-- ГЕНЕРАЦІЯ АКТИВНИХ ФІЛЬТРІВ -->
+							</div>
+							<div class="result__cleaning btn">
+								<button class="btn__result">Очистити фільтри</button>
+							</div>
+						</div>
+						<div class="filter__options options">
+							<div class="options__price price">
+								<div class="price__title filter__title">Ціна, ₴</div>
+								<div class="price__sum">
+									<p class="price__sum-label">Від</p>
+									<div class="price__sum-min">
+										<input type="number" class="price__min" id="price__min" value="0" onchange="setMinInput()"></input>
+									</div>
+									<p class="price__sum-label">До</p>
+									<div class=" price__sum-max">
+										<input type="number" class="price__max" id="price__max" value="10000" onchange="setMaxInput()"></input>
+									</div>
+									<div id="price__btn" class="price__btn">OK</div>
+								</div>
+								<div id="options__input" class="options__input range">
+								<span id="range__progress" class="range__progress"></span>
+									<input name="range__min" class="range__min" id="range__min" type="range" min="0" max="10000" value="0" oninput="slideMin()">
+									<input name="range__max" class="range__max" id="range__max" type="range" min="0" max="10000" value="10000" oninput="slideMax()">
+								</div>
+							</div>
+							<div id="filters" class="filters filters__block">
+								<!-- ГЕНЕРАЦІЯ ФІЛЬТРІВ -->
+							</div>
+						</div>
+					</section>
+					<section id="block__show"  class="block__show show">
+						<div id="show" class="show__cards">
+							<!-- ГЕНЕРАЦІЯ КАРТОК -->
+						</div>
+						<div class="show__bottom">
+							<div class="pagination__container">
+								<div class="pagination__show">
+									<button class="pagination__show-btn">Показати ще</button>
+								</div>
+								<div class="pagination__slider">
+									<button class="pagination__arrow-left">
+									<img src="/tvoe-filter/img/icons/arrow-right.svg" alt="">
+								</button>
+								<div class="pagination"></div>
+								<button class="pagination__arrow-right">
+									<img src="/tvoe-filter/img/icons/arrow-right.svg" alt="">
+								</button>
+								</div>
+							</div>
+						</div>
+						<div class="show__data">
+							<div class="show__data-text">
+								<p>Бензопила ланцюгова Vitals BKZ 4518n 18“ призначена для швидкого перепилювання стовбурів і гілок дерев і чагарників, а також для розпилювання виробів зі свіжої та сухої деревини і деревинно-стружкових матеріалів різної товщини і конфігурації, в тому числі дощок, брусів, плит ДСП і ОДСП. Висока якість і надійність даного виробу в роботі поєднуються з простотою в процесі експлуатації і обслуговування <br/>
+								Ця бензопила оснащена економічним бензиновим двотактним двигуном потужністю 2,3 к.с. при максимальній частоті обертання коленвала 11000 об/хв. Хромування внутрішньої поверхні циліндра двигуна забезпечує тривалий термін служби двигуна завдяки збільшенню зносостійкості стінок циліндра.<br/>
+								На виріб встановлена 18-дюймова шина. Даний показник прийнято вважати ідеальним для виконання робіт в побуті, в тому числі і з деревиною великого діаметру. За рахунок високої швидкості ланцюга, який дорівнює 18 м/с, забезпечується висока продуктивність роботи. Ця бензопила оснащена економічним бензиновим двотактним двигуном потужністю 2,3 к.с. при максимальній частоті обертання коленвала 11000 об/хв. Хромування внутрішньої поверхні циліндра двигуна забезпечує тривалий термін служби двигуна завдяки збільшенню зносостійкості стінок циліндра.<br/>
+								На виріб встановлена 18-дюймова шина. Даний показник прийнято вважати ідеальним для виконання робіт в побуті, в тому числі і з деревиною великого діаметру. За рахунок високої швидкості ланцюга, який дорівнює 18 м/с, забезпечується висока продуктивність роботи.</p>
+							</div>
+							<button class="show__data-btn">Читати повністю</button>
+						</div>
+					</section>
+				</div>
+
+				</div>
+				
+			</div>
+		</main>
+	</div>
+	
+	
+	<script src="/tvoe-filter/js/data/water heater.js"></script>
+	<script src="/tvoe-filter/js/script.js"></script>
+</body>
+</html>

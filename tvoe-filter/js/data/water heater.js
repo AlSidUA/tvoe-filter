@@ -1,0 +1,357 @@
+let waterHeaters = [
+        {
+            photo: "https://loremflickr.com/300/200/water,heaters",
+            name: "Водонагрівач ARISTON ANDRIS LUX 6 OR EU підведення води знизу",
+            reviews: {
+                available: true,
+                count: 25
+            },
+            product_code: "000017741",
+            stock_quantity: 0,
+            manufacturer: "Ariston",
+            pipe_diameter: "1/2 дюйма",
+            shape: "Прямокутна",
+            heating_element_type: "Відсутній",
+            volume: "50 літрів",
+            heater_type: "Накопичувальний",
+            power: "1.5 кВт",
+            price: 2500,
+            promotion: true,
+            promotional_price: 2200,
+            description: "Високоякісний водонагрівач з підведенням води знизу. Підходить для різноманітних застосувань.",
+            specifications: "Потужний та ефективний нагрівальний елемент, міцна конструкція, енергоефективний дизайн."
+        },
+        {
+            photo: "https://loremflickr.com/300/200/water,heaters",
+            name: "Водонагрівач BOSCH PRO 10T ES",
+            reviews: {
+                available: true,
+                count: 18
+            },
+            product_code: "000017742",
+            stock_quantity: 30,
+            manufacturer: "Bosch",
+            pipe_diameter: "1/2 дюйма",
+            shape: "Прямокутна",
+            heating_element_type: "Мокрий (відкритий)",
+            volume: "40 літрів",
+            heater_type: "Накопичувальний",
+            power: "1.8 кВт",
+            price: 2800,
+            promotion: false,
+            promotional_price: 0,
+            description: "Надійний водонагрівач з мокрим (відкритим) нагрівальним елементом для швидкого нагрівання.",
+            specifications: "Легка установка, енергоефективний, підходить для житлових і комерційних приміщень."
+        },
+        {
+            photo: "https://loremflickr.com/300/200/water,heaters",
+            name: "Водонагрівач PHILIPS InstantFlow 3X",
+            reviews: {
+                available: true,
+                count: 12
+            },
+            product_code: "000017755",
+            stock_quantity: 0,
+            manufacturer: "Philips",
+            pipe_diameter: "1/2 дюйма",
+            shape: "Кругла",
+            heating_element_type: "Сухий (закритий)",
+            volume: "30 літрів",
+            heater_type: "Безбаковий",
+            power: "2.0 кВт",
+            price: 1800,
+            promotion: false,
+            promotional_price: 1600,
+            description: "Компактний та ефективний безбаковий водонагрівач з закритим нагрівальним елементом.",
+            specifications: "Миттєво гаряча вода, економія місця, підходить для невеликих приміщень."
+        },
+        {
+            photo: "https://loremflickr.com/300/200/water,heaters",
+            name: "Водонагрівач PHILIPS InstantFlow 3X",
+            reviews: {
+                available: true,
+                count: 12
+            },
+            product_code: "000017755",
+            stock_quantity: 0,
+            manufacturer: "Philips",
+            pipe_diameter: "1/2 дюйма",
+            shape: "Кругла",
+            heating_element_type: "Сухий (закритий)",
+            volume: "30 літрів",
+            heater_type: "Безбаковий",
+            power: "2.0 кВт",
+            price: 1800,
+            promotion: false,
+            promotional_price: 1600,
+            description: "Компактний та ефективний безбаковий водонагрівач з закритим нагрівальним елементом.",
+            specifications: "Миттєво гаряча вода, економія місця, підходить для невеликих приміщень."
+        },
+        {
+            photo: "https://loremflickr.com/300/200/water,heaters",
+            name: "Водонагрівач ARISTON ANDRIS LUX 6 OR EU підведення води знизу",
+            reviews: {
+                available: true,
+                count: 25
+            },
+            product_code: "000017741",
+            stock_quantity: 50,
+            manufacturer: "Ariston",
+            pipe_diameter: "1/2 дюйма",
+            shape: "Прямокутна",
+            heating_element_type: "Відсутній",
+            volume: "50 літрів",
+            heater_type: "Накопичувальний",
+            power: "1.5 кВт",
+            price: 2500,
+            promotion: true,
+            promotional_price: 2200,
+            description: "Високоякісний водонагрівач з підведенням води знизу. Підходить для різноманітних застосувань.",
+            specifications: "Потужний та ефективний нагрівальний елемент, міцна конструкція, енергоефективний дизайн."
+        },
+        {
+            photo: "https://loremflickr.com/300/200/water,heaters",
+            name: "Водонагрівач BOSCH PRO 10T ES",
+            reviews: {
+                available: true,
+                count: 18
+            },
+            product_code: "000017742",
+            stock_quantity: 30,
+            manufacturer: "Bosch",
+            pipe_diameter: "1/2 дюйма",
+            shape: "Прямокутна",
+            heating_element_type: "Мокрий (відкритий)",
+            volume: "40 літрів",
+            heater_type: "Накопичувальний",
+            power: "1.8 кВт",
+            price: 2800,
+            promotion: false,
+            promotional_price: 0,
+            description: "Надійний водонагрівач з мокрим (відкритим) нагрівальним елементом для швидкого нагрівання.",
+            specifications: "Легка установка, енергоефективний, підходить для житлових і комерційних приміщень."
+        },
+        {
+            photo: "https://loremflickr.com/300/200/water,heaters",
+            name: "Водонагрівач Siemens Model X",
+            reviews: {
+                available: true,
+                count: 20
+            },
+            product_code: "000017743",
+            stock_quantity: 35,
+            manufacturer: "Siemens",
+            pipe_diameter: "1/2 дюйма",
+            shape: "Прямокутна",
+            heating_element_type: "Сухий (закритий)",
+            volume: "45 літрів",
+            heater_type: "Накопичувальний",
+            power: "1.7 кВт",
+            price: 2600,
+            promotion: true,
+            promotional_price: 2400,
+            description: "Сучасний водонагрівач з закритим нагрівальним елементом. Надійний та енергоефективний.",
+            specifications: "Елегантний дизайн, легка установка, додаткові функції енергозбереження."
+        },
+        {
+            photo: "https://loremflickr.com/300/200/water,heaters",
+            name: "Водонагрівач LG TurboHeat 5000",
+            reviews: {
+                available: true,
+                count: 22
+            },
+            product_code: "000017744",
+            stock_quantity: 40,
+            manufacturer: "LG",
+            pipe_diameter: "1/2 дюйма",
+            shape: "Прямокутна",
+            heating_element_type: "Мокрий (відкритий)",
+            volume: "55 літрів",
+            heater_type: "Накопичувальний",
+            power: "1.9 кВт",
+            price: 2900,
+            promotion: false,
+            promotional_price: 0,
+            description: "Ефективний водонагрівач від відомого виробника LG. Має великий об'єм для задоволення потреб водопостачання.",
+            specifications: "Мокрий нагрівальний елемент для швидкого та ефективного нагрівання води."
+        },
+        {
+            photo: "https://loremflickr.com/300/200/water,heaters",
+            name: "Водонагрівач Samsung SmartFlow",
+            reviews: {
+                available: true,
+                count: 24
+            },
+            product_code: "000017745",
+            stock_quantity: 42,
+            manufacturer: "Samsung",
+            pipe_diameter: "1/2 дюйма",
+            shape: "Прямокутна",
+            heating_element_type: "Відсутній",
+            volume: "60 літрів",
+            heater_type: "Накопичувальний",
+            power: "2.0 кВт",
+            price: 3000,
+            promotion: true,
+            promotional_price: 2700,
+            description: "Сучасний водонагрівач від Samsung з функцією SmartFlow. Забезпечує стабільний та надійний потік гарячої води.",
+            specifications: "Енергоефективний, простий у використанні, надійний дизайн."
+        },
+        {
+            photo: "https://loremflickr.com/300/200/water,heaters",
+            name: "Водонагрівач Bosch AquaPro Plus",
+            reviews: {
+                available: true,
+                count: 26
+            },
+            product_code: "000017746",
+            stock_quantity: 48,
+            manufacturer: "Bosch",
+            pipe_diameter: "1/2 дюйма",
+            shape: "Прямокутна",
+            heating_element_type: "Сухий (закритий)",
+            volume: "65 літрів",
+            heater_type: "Накопичувальний",
+            power: "2.2 кВт",
+            price: 3200,
+            promotion: true,
+            promotional_price: 2900,
+            description: "Потужний водонагрівач від Bosch з функцією AquaPro Plus для оптимального контролю температури води.",
+            specifications: "Сухий нагрівальний елемент, великий об'єм для задоволення потреб великої сім'ї."
+        },
+        {
+            photo: "https://loremflickr.com/300/200/water,heaters",
+            name: "Водонагрівач Electrolux PerfectFlow",
+            reviews: {
+                available: true,
+                count: 28
+            },
+            product_code: "000017747",
+            stock_quantity: 55,
+            manufacturer: "Electrolux",
+            pipe_diameter: "1/2 дюйма",
+            shape: "Прямокутна",
+            heating_element_type: "Мокрий (відкритий)",
+            volume: "70 літрів",
+            heater_type: "Накопичувальний",
+            power: "2.5 кВт",
+            price: 3500,
+            promotion: false,
+            promotional_price: 0,
+            description: "Водонагрівач від Electrolux з ідеальним потоком гарячої води. Підходить для великих родин та готелів.",
+            specifications: "Мокрий нагрівальний елемент для найшвидшого нагрівання води в будь-який момент часу."
+        },
+        {
+            photo: "https://loremflickr.com/300/200/water,heaters",
+            name: "Водонагрівач Panasonic SmartHeat",
+            reviews: {
+                available: true,
+                count: 30
+            },
+            product_code: "000017748",
+            stock_quantity: 60,
+            manufacturer: "Panasonic",
+            pipe_diameter: "1/2 дюйма",
+            shape: "Прямокутна",
+            heating_element_type: "Відсутній",
+            volume: "75 літрів",
+            heater_type: "Накопичувальний",
+            power: "2.8 кВт",
+            price: 3800,
+            promotion: true,
+            promotional_price: 3500,
+            description: "Розумний водонагрівач з функцією SmartHeat від Panasonic. Забезпечує ефективне та економне використання енергії.",
+            specifications: "Енергоефективний дизайн, інтелектуальне управління температурою води."
+        },
+        {
+            photo: "https://loremflickr.com/300/200/water,heaters",
+            name: "Водонагрівач Haier TurboFlow Plus",
+            reviews: {
+                available: true,
+                count: 32
+            },
+            product_code: "000017749",
+            stock_quantity: 65,
+            manufacturer: "Haier",
+            pipe_diameter: "1/2 дюйма",
+            shape: "Прямокутна",
+            heating_element_type: "Сухий (закритий)",
+            volume: "80 літрів",
+            heater_type: "Накопичувальний",
+            power: "3.0 кВт",
+            price: 4000,
+            promotion: false,
+            promotional_price: 0,
+            description: "Потужний водонагрівач з функцією TurboFlow Plus для надійного та швидкого нагрівання великих об'ємів води.",
+            specifications: "Сухий нагрівальний елемент, великий об'єм для задоволення потреб великої сім'ї."
+        },
+        {
+            photo: "https://loremflickr.com/300/200/water,heaters",
+            name: "Водонагрівач Gorenje AquaStream",
+            reviews: {
+                available: true,
+                count: 35
+            },
+            product_code: "000017750",
+            stock_quantity: 70,
+            manufacturer: "Gorenje",
+            pipe_diameter: "1/2 дюйма",
+            shape: "Прямокутна",
+            heating_element_type: "Мокрий (відкритий)",
+            volume: "85 літрів",
+            heater_type: "Накопичувальний",
+            power: "3.5 кВт",
+            price: 4200,
+            promotion: true,
+            promotional_price: 3900,
+            description: "Надійний та потужний водонагрівач від Gorenje. Забезпечує швидке та надійне нагрівання великих об'ємів води.",
+            specifications: "Мокрий нагрівальний елемент, великий об'єм для використання в готелях та спортзалах."
+        },
+        {
+            photo: "https://loremflickr.com/300/200/water,heaters",
+            name: "Водонагрівач Whirlpool PowerFlow",
+            reviews: {
+                available: true,
+                count: 40
+            },
+            product_code: "000017751",
+            stock_quantity: 75,
+            manufacturer: "Whirlpool",
+            pipe_diameter: "1/2 дюйма",
+            shape: "Прямокутна",
+            heating_element_type: "Відсутній",
+            volume: "90 літрів",
+            heater_type: "Накопичувальний",
+            power: "4.0 кВт",
+            price: 4500,
+            promotion: false,
+            promotional_price: 0,
+            description: "Потужний водонагрівач від Whirlpool з функцією PowerFlow для надійного нагрівання великих об'ємів води.",
+            specifications: "Ефективний та надійний, великий об'єм для використання в об'єктах громадської інфраструктури."
+        },
+        {
+            photo: "https://loremflickr.com/300/200/water,heaters",
+            name: "Водонагрівач AEG ProHeat Plus",
+            reviews: {
+                available: true,
+                count: 45
+            },
+            product_code: "000017752",
+            stock_quantity: 80,
+            manufacturer: "AEG",
+            pipe_diameter: "1/2 дюйма",
+            shape: "Прямокутна",
+            heating_element_type: "Сухий (закритий)",
+            volume: "100 літрів",
+            heater_type: "Накопичувальний",
+            power: "4.5 кВт",
+            price: 4800,
+            promotion: true,
+            promotional_price: 4500,
+            description: "Потужний водонагрівач від AEG з функцією ProHeat Plus для швидкого та надійного нагрівання великих об'ємів води.",
+            specifications: "Сухий нагрівальний елемент, великий об'єм для використання в готелях, басейнах та інших великих об'єктах."
+        }
+    ];
+
+
+
